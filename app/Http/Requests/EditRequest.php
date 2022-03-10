@@ -28,7 +28,7 @@ class EditRequest extends FormRequest
             'code' => 'required|min:6|unique:products,code,' . $this->route('product')->id,
             'names' => 'required|max:150',
             'price' => 'required|numeric',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'nullable',
         ];
     }
 }
